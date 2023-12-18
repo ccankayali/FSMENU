@@ -1,9 +1,10 @@
+import Login from './components/Login';
 import './index.css';
 
 function App() {
   return (
-    <div>
-      <h1 className="bg-black text-white">Can</h1>
+    <div className="bg-black">
+      <Login />
     </div>
   );
 }
