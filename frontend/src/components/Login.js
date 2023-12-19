@@ -42,7 +42,7 @@ const EntryScreen = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">
-      <button className="p-4 mt-5 bg-red-500 text-white rounded-xl mb-4">Admin</button>
+      <button className="p-4 mt-5 bg-red-500 text-white rounded-xl mb-16">Admin</button>
       <div className="max-w-screen-lg p-8 flex flex-col items-start">
         {isVerified ? (
           <h1 className="text-4xl mb-3 text-white">Doğrulama Başarılı!</h1>
