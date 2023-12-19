@@ -42,7 +42,7 @@ const EntryScreen = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">
-      <button className="p-4 mt-5 bg-red-500 text-white rounded-xl mb-16">Admin</button>
+    <button className="p-4 mt-5 bg-red-500 hover:bg-red-600  text-white rounded-xl mb-16 disabled:opacity-50 disabled:cursor-not-allowed">Admin</button>
       <div className="max-w-screen-lg p-8 flex flex-col items-start">
         {isVerified ? (
           <h1 className="text-4xl mb-3 text-white">Doğrulama Başarılı!</h1>
@@ -50,7 +50,7 @@ const EntryScreen = () => {
           <div>
             <div className="text-4xl mb-3 flex items-center justify-center text-white">{randomNumber}</div>
             <div className="w-full max-w-xs">
-              <h1 className="text-white flex items-center justify-center p-2">
+              <h1 className="text-white flex items-center justify-center p-2 ">
                 Lütfen Doğrulama Kodunu Giriniz
               </h1>
               <input
@@ -58,17 +58,17 @@ const EntryScreen = () => {
                 placeholder="Doğrulama Kodu"
                 value={verificationCode}
                 onChange={(e) => setVerificationCode(e.target.value)}
-                className="w-full p-4 mb-4 border rounded"
+                className="w-full p-4 mb-4 border rounded-full"
               />
               <div className="flex w-full flex-col items-center">
                 <button
-                  className="w-full p-4 bg-blue-500 text-white rounded-xl mb-2"
+                  className="w-full p-4 bg-blue-500 hover:bg-blue-600 text-white rounded-xl mb-2"
                   onClick={handleNewNumber}
                 >
                   Yeni Sayı
                 </button>
                 <button
-                  className="w-full p-4 bg-green-500 text-white rounded-xl"
+                  className="w-full p-4 bg-green-500 hover:bg-green-600 text-white rounded-xl"
                   onClick={handleVerification}
                 >
                   İlerle
